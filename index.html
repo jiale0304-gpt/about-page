@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | IQI Dreammakerz — Not Just Selling Property</title>
+<meta name="description" content="IQI Dreammakerz is a new-generation real estate team in Johor Bahru — powered by content, AI marketing and education-first advisory, backed by IQI's global network.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0B0B0B;--coal:#141414;--gold:#C9A227;--gold-2:#E7C55C;
+  --paper:#FAF8F2;--ink:#181818;--muted:#6E6B62;--mist:#B9B6AC;
+  --line-d:rgba(255,255,255,.14);--line-l:#E6E2D6;
+  --display:'Bricolage Grotesque',sans-serif;--body:'Open Sans',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+section{padding:96px 0;position:relative;overflow:hidden}
+h1,h2,h3{font-family:var(--display);line-height:1.08}
+h2{font-size:clamp(1.9rem,3.8vw,2.8rem);font-weight:800;letter-spacing:-.01em;margin-bottom:18px}
+.dark{background:var(--black);color:var(--mist)}
+.dark h2{color:#fff}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--display);font-size:.8rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.eyebrow::before{content:"";width:34px;height:2px;background:var(--gold)}
+.lede{max-width:700px;font-size:1.04rem}
+.dark .lede{color:var(--mist)}
+.gold{color:var(--gold-2)}
+.wm{position:absolute;font-family:var(--display);font-weight:800;font-size:clamp(9rem,22vw,19rem);line-height:1;color:transparent;-webkit-text-stroke:1.5px rgba(201,162,39,.16);user-select:none;pointer-events:none;z-index:0}
+section>.wrap{position:relative;z-index:1}
+.rv{transition:opacity .7s ease,transform .7s ease}
+.rv.pre{opacity:0;transform:translateY(26px)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.12s}.rv.d2{transition-delay:.24s}.rv.d3{transition-delay:.36s}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:.98rem;padding:15px 30px;border-radius:999px;text-decoration:none;transition:transform .18s,box-shadow .18s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:linear-gradient(120deg,var(--gold),var(--gold-2));color:#0B0B0B;box-shadow:0 10px 26px rgba(201,162,39,.35)}
+.btn-line{border:1.5px solid rgba(255,255,255,.5);color:#fff}
+.btn-line:hover{border-color:var(--gold-2);color:var(--gold-2)}
+.ph{background:repeating-linear-gradient(45deg,#1C1C1C,#1C1C1C 14px,#171717 14px,#171717 28px);display:flex;align-items:center;justify-content:center;color:#6E6C64;font-size:.82rem;font-weight:700;text-align:center;padding:16px}
+.on-light .ph{background:repeating-linear-gradient(45deg,#EDE9DE,#EDE9DE 14px,#E5E1D5 14px,#E5E1D5 28px);color:#9B978B}
+
+/* header */
+.topnav{position:sticky;top:0;z-index:90;background:rgba(11,11,11,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
+.topnav .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo-lockup img{height:44px;width:auto}
+nav.menu{display:flex;gap:30px;align-items:center}
+nav.menu a{font-family:var(--display);font-weight:600;font-size:.94rem;color:#fff;text-decoration:none;position:relative;padding:4px 0}
+nav.menu a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--gold-2);transition:width .25s}
+nav.menu a:hover::after,nav.menu a.on::after{width:100%}
+nav.menu a.on{color:var(--gold-2)}
+.nav-cta{background:linear-gradient(120deg,var(--gold),var(--gold-2));color:#0B0B0B!important;font-family:var(--display);font-weight:700;font-size:.88rem;padding:12px 30px;border-radius:999px;text-decoration:none;white-space:nowrap}
+.nav-cta::after{display:none}
+@media(max-width:880px){nav.menu a{display:none}nav.menu .nav-cta{display:inline-flex}}
+
+/* hero */
+.hero{background:var(--black);color:#fff;padding:0}
+.hero-inner{position:relative;padding:120px 0 90px}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 30%;opacity:.5}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,11,.55),rgba(11,11,11,.35) 40%,rgba(11,11,11,.88) 100%),linear-gradient(100deg,rgba(11,11,11,.72) 20%,rgba(11,11,11,.25) 70%)}
+.hero .wrap{position:relative}
+.hero h1{font-size:clamp(2.4rem,5.4vw,4rem);font-weight:800;letter-spacing:-.015em;max-width:880px;color:#fff}
+.hero h1 .hl{position:relative;white-space:nowrap}
+.hero h1 .hl::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:.28em;background:rgba(201,162,39,.35);z-index:-1}
+.hero .lede{margin:24px 0 34px;color:#D5D2C8}
+
+/* timeline */
+.timeline{position:relative;margin-top:56px;padding-left:34px}
+.timeline::before{content:"";position:absolute;left:10px;top:6px;bottom:6px;width:2px;background:repeating-linear-gradient(180deg,var(--gold) 0 10px,transparent 10px 18px)}
+.tl{position:relative;margin-bottom:38px;max-width:640px}
+.tl::before{content:"";position:absolute;left:-32px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--paper);border:4px solid var(--gold)}
+.tl .yr{font-family:var(--display);font-weight:800;font-size:1.3rem;color:var(--gold)}
+.tl h3{font-size:1.05rem;font-weight:700;margin:4px 0 4px}
+.tl p{font-size:.92rem;color:var(--muted)}
+
+.story-video{max-width:900px;margin:48px auto 0}
+.sv-frame{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(11,11,11,.25);border:1px solid var(--line-l)}
+.sv-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* differentiators */
+.diff-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:52px}
+.diff{border:1px solid rgba(201,162,39,.4);background:linear-gradient(160deg,rgba(201,162,39,.10),rgba(201,162,39,.03));border-radius:16px;overflow:hidden;transition:transform .25s,border-color .25s}
+.diff img,.diff>.ph{width:100%;aspect-ratio:16/8.5;object-fit:cover;display:flex}
+.diff .db{padding:24px 26px 28px}
+.diff:hover{transform:translateY(-4px);border-color:var(--gold-2)}
+.diff .num{font-family:var(--display);font-weight:800;font-size:2rem;color:var(--gold-2);line-height:1}
+.diff h3{color:#fff;font-size:1.15rem;font-weight:700;margin:12px 0 8px}
+.diff p{font-size:.92rem;color:var(--mist)}
+
+/* leadership */
+.lead-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;margin:52px auto 0;max-width:860px}
+.leader{background:#fff;border:1px solid var(--line-l);border-radius:18px;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.leader:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(24,24,24,.10)}
+.leader img{width:100%;aspect-ratio:4/4.2;object-fit:cover;object-position:center 18%;display:block;background:#111}
+.leader .lb{padding:20px 22px}
+.leader h3{font-size:1.1rem;font-weight:800}
+.leader .role{font-size:.82rem;color:var(--gold);font-family:var(--display);font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin:2px 0 8px}
+.leader p{font-size:.88rem;color:var(--muted)}
+.leader .quote{font-family:var(--display);font-weight:600;font-style:italic;font-size:.98rem;color:#2A2820;border-left:3px solid var(--gold);padding-left:14px;margin-top:10px}
+
+/* IQI stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:52px;border-top:1px solid var(--line-d);border-bottom:1px solid var(--line-d)}
+.stats .s{padding:30px 18px;text-align:center;border-right:1px solid var(--line-d)}
+.stats .s:last-child{border-right:none}
+.stats .n{font-family:var(--display);font-weight:800;font-size:clamp(2rem,4vw,3rem);color:var(--gold-2);line-height:1}
+.stats .l{font-size:.82rem;color:var(--mist);margin-top:8px;letter-spacing:.08em;text-transform:uppercase}
+
+/* culture */
+.cult-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:52px}
+.cult{position:relative;border-radius:16px;overflow:hidden}
+.cult img{width:100%;aspect-ratio:4/3.2;object-fit:cover;display:block}
+.cult figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 18px 14px;background:linear-gradient(transparent,rgba(0,0,0,.9));color:#fff;font-family:var(--display);font-weight:700;font-size:.95rem}
+.cult figcaption small{display:block;font-family:var(--body);font-weight:500;color:#CBC8BF;font-size:.76rem;margin-top:3px}
+
+/* media */
+.media-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:52px}
+.mcard{background:#fff;border:1px solid var(--line-l);border-radius:18px;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.mcard:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(24,24,24,.10)}
+.mcard .ph{aspect-ratio:16/9}
+.mcard .mb{padding:22px 24px}
+.mcard h3{font-size:1.1rem;font-weight:800}
+.mcard p{font-size:.9rem;color:var(--muted);margin:6px 0 12px}
+.mcard a{font-family:var(--display);font-weight:700;font-size:.88rem;color:var(--gold);text-decoration:none}
+
+/* CTA */
+.cta-sec{background:radial-gradient(900px 500px at 85% 10%, rgba(201,162,39,.16), transparent 60%), var(--black);text-align:center;color:var(--mist)}
+.cta-sec h2{color:#fff}
+.cta-sec .lede{color:var(--mist)}
+.cta-sec .ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:36px}
+.recruit{margin:64px auto 0;max-width:860px;border:1px dashed rgba(201,162,39,.5);border-radius:14px;padding:20px 26px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;text-align:left}
+.recruit p{font-size:.94rem;color:var(--mist)}
+.recruit b{color:#fff}
+.recruit a{color:var(--gold-2);font-family:var(--display);font-weight:700;text-decoration:none;white-space:nowrap}
+
+footer{background:#080808;color:#8B887E;font-size:.8rem;padding:36px 0;text-align:center}
+footer a{color:var(--gold);text-decoration:none}
+
+@media(max-width:960px){
+  .diff-grid,.media-grid{grid-template-columns:1fr}
+  .lead-grid,.cult-grid{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stats .s:nth-child(2){border-right:none}
+  .stats .s{border-bottom:1px solid var(--line-d)}
+  .stats .s:nth-child(3),.stats .s:nth-child(4){border-bottom:none}
+}
+@media(max-width:620px){
+  section{padding:64px 0}
+  .lead-grid,.cult-grid,.stats{grid-template-columns:1fr}
+  .stats .s{border-right:none}
+}
+@media (prefers-reduced-motion:reduce){.rv{transition:none;opacity:1;transform:none}.btn,.diff,.leader,.mcard,.cult{transition:none}}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="topnav">
+  <div class="wrap">
+    <a class="logo-lockup" href="https://www.iqidreammakerzgroup.com">
+      <img src="img/logo-white.png" alt="IQI Dreammakerz">
+    </a>
+    <nav class="menu">
+      <a href="https://www.iqidreammakerzgroup.com">Home</a>
+      <a href="#" class="on">About</a>
+      <a href="https://why-jb.iqidreammakerzgroup.com">Why Johor Bahru</a>
+      <a href="https://www.iqidreammakerzgroup.com/projects">Projects</a>
+      <a href="https://www.iqidreammakerzgroup.com/portfolio">Join Us</a>
+      <a class="nav-cta" href="https://wa.me/60167303559?text=Hi%2C%20I%27d%20like%20to%20book%20a%20consultation.">Book Consultation</a>
+    </nav>
+  </div>
+</div>
+
+<!-- 1 · HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-media"><img src="img/hero-team.jpg" alt="Dreammakerz — IQI Top Team 2025, 1st Runner Up"></div>
+    <div class="wrap">
+      <span class="eyebrow rv">About Dreammakerz</span>
+      <h1 class="rv d1">We don't just sell property.<br><span class="hl">We build what lasts.</span></h1>
+      <p class="lede rv d2">IQI Dreammakerz is a new-generation real estate team based in Johor Bahru — powered by content, AI marketing, personal branding and an education-first approach to every client relationship.</p>
+    </div>
+  </div>
+</header>
+
+<!-- 2 · OUR STORY / VIDEO -->
+<section class="on-light">
+  <div class="wm" style="top:-40px;right:-30px">DMZ</div>
+  <div class="wrap">
+    <span class="eyebrow rv">Our Story</span>
+    <h2 class="rv d1">One team, one story — press play</h2>
+    <p class="lede rv d2">Three minutes inside Dreammakerz: who we are, how we work, and why buyers across the border trust us with their biggest decisions.</p>
+    <div class="story-video rv d2">
+      <div class="sv-frame">
+        <iframe src="https://www.youtube.com/embed/HkP4srjW7Aw" title="Inside Dreammakerz — our team story" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · WHAT MAKES US DIFFERENT -->
+<section class="dark">
+  <div class="wm" style="bottom:-60px;left:-30px;-webkit-text-stroke-color:rgba(201,162,39,.13)">DMZ</div>
+  <div class="wrap">
+    <span class="eyebrow rv">Why Dreammakerz</span>
+    <h2 class="rv d1">Four things we do <span class="gold">differently</span></h2>
+    <div class="diff-grid">
+      <div class="diff rv"><img src="img/diff-1.jpg" alt="Education-first property advisory session" loading="lazy"><div class="db"><div class="num">01</div><h3>Education Before Transaction</h3><p>We'd rather you understand the market than rush a decision. Our advisory starts with data, comparisons and honest trade-offs — never pressure.</p></div></div>
+      <div class="diff rv d1"><img src="img/diff-2.jpg" alt="Content production — publishing what we know" loading="lazy"><div class="db"><div class="num">02</div><h3>We Publish What We Know</h3><p>Our market research isn't hidden in a drawer — it becomes videos, podcasts and reports anyone can verify. Transparency is our marketing.</p></div></div>
+      <div class="diff rv d2"><img src="img/diff-3.jpg" alt="AI-powered systems at work" loading="lazy"><div class="db"><div class="num">03</div><h3>AI-Powered Systems</h3><p>From automated follow-ups to data-driven campaigns, we use AI so no client question waits and no market signal gets missed.</p></div></div>
+      <div class="diff rv d3"><img src="img/diff-4.jpg" alt="Johor Bahru and the Causeway at night — cross-border DNA" loading="lazy"><div class="db"><div class="num">04</div><h3>Cross-Border DNA</h3><p>Based at the Singapore-Malaysia border, we live the RTS and JS-SEZ story daily — and speak both markets fluently, in every sense.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · LEADERSHIP -->
+<section class="on-light">
+  <div class="wrap">
+    <span class="eyebrow rv">Leadership</span>
+    <h2 class="rv d1">The people behind the vision</h2>
+    <div class="lead-grid">
+      <div class="leader rv">
+        <img src="img/larry.jpg" alt="Larry Leong — Billion Dollar Achiever 2025, IQI Prestige Award">
+        <div class="lb"><h3>Larry Leong</h3><div class="role">Group VP @ IQI Realty · Dreammakerz Founder</div><p class="quote">"Property is the product. Trust is the business."</p></div>
+      </div>
+      <div class="leader rv d1">
+        <img src="img/victor.jpg" alt="Victor Lim — Group VP, IQI Realty; Dreammakerz Founder">
+        <div class="lb"><h3>Victor Lim</h3><div class="role">Group VP @ IQI Realty · Dreammakerz Founder</div><p class="quote">"The market rewards those who understand it deeper, not louder."</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · IQI BACKING -->
+<section class="dark">
+  <div class="wm" style="top:-50px;right:-10px;-webkit-text-stroke-color:rgba(201,162,39,.13)">IQI</div>
+  <div class="wrap">
+    <span class="eyebrow rv">The Network Behind Us</span>
+    <h2 class="rv d1">Local team. <span class="gold">Global machine.</span></h2>
+    <p class="lede rv d2">Dreammakerz operates within the IQI Realty ecosystem — one of Asia's largest property networks. When you work with us, you plug into international reach, cross-country data and a marketplace of global buyers.</p>
+    <div class="stats">
+      <div class="s rv"><div class="n">30+</div><div class="l">Countries</div></div>
+      <div class="s rv d1"><div class="n">700+</div><div class="l">Projects</div></div>
+      <div class="s rv d2"><div class="n">4000+</div><div class="l">Warriors</div></div>
+      <div class="s rv d3"><div class="n">500+</div><div class="l">Overseas Buyers Guided in Malaysia</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · CULTURE -->
+<section class="on-light">
+  <div class="wrap">
+    <span class="eyebrow rv">Inside the Team</span>
+    <h2 class="rv d1">A culture that trains, shares and celebrates</h2>
+    <p class="lede rv d2">Great client outcomes come from a great team environment. This is what a week at Dreammakerz looks like:</p>
+    <div class="cult-grid">
+      <figure class="cult rv"><img src="img/academy.jpg" alt="Dreammakerz Academy weekly sharing session" loading="lazy"><figcaption>Dreammakerz Academy<small>Weekly knowledge-sharing sessions — market updates, skills, mindset</small></figcaption></figure>
+      <figure class="cult rv d1"><img src="img/bonding.jpg" alt="Dreammakerz monthly bonding" loading="lazy"><figcaption>Monthly Bonding<small>We grow as a family, not just a salesforce</small></figcaption></figure>
+      <figure class="cult rv d2"><img src="img/wins.jpg" alt="IQI Top Team 2025 — celebrating wins" loading="lazy"><figcaption>Wins, Celebrated<small>Recognition culture — every milestone matters</small></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · CTA -->
+<section class="cta-sec">
+  <div class="wrap">
+    <span class="eyebrow rv" style="justify-content:center">Work With Us</span>
+    <h2 class="rv d1">Let's talk about your next move</h2>
+    <p class="lede rv d2" style="margin:0 auto">Whether you're buying, investing or exploring — start with a conversation, not a commitment.</p>
+    <div class="ctas rv d3">
+      <a class="btn btn-gold" href="https://wa.me/60167303559?text=Hi%2C%20I%27d%20like%20to%20speak%20with%20the%20Dreammakerz%20team.">WhatsApp the Team</a>
+      <a class="btn btn-line" href="https://www.iqidreammakerzgroup.com/projects">Browse Projects</a>
+    </div>
+    <div class="recruit rv">
+      <p><b>Reading this and thinking "I want to be part of this"?</b> We're always looking for the next Dreammaker.</p>
+      <a href="https://www.iqidreammakerzgroup.com/portfolio">Join the Team →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 IQI Dreammakerz Group · Johor Bahru, Johor, Malaysia · 6016-730 3559 · <a href="mailto:iqidmg@gmail.com">iqidmg@gmail.com</a></div>
+</footer>
+
+<script>
+const io = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>{el.classList.add('pre');io.observe(el)});
+</script>
+</body>
+</html>
